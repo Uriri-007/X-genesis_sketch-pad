@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family: font001;
+  src: url("uri.ttf");
+}
+@font-face{
+  font-family: font002;
+  src: url("uri002.ttf");
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #b5b5b5;
+  font-family: font001;
+}
+.container{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.grid-item{
+  border: 1px solid black;
+  cursor: pointer;
+}
+.btn-controls{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+button{
+  flex: 2;
+  margin-bottom: 10px;
+  border: 1px ridge black;
+  border-radius: 5px;
+  background: white;
+  padding: 1px 2px;
+}
+.range{
+  margin-bottom: 5px;
+}
+p{
+  font-family: font002;
+}
